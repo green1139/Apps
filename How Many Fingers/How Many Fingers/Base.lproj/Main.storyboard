@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E33b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="How_Many_Fingers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Many Fingers?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlc-BA-NC4">
+                                <rect key="frame" x="-38" y="20" width="450" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="21c-GX-INJ"/>
+                                    <constraint firstAttribute="height" constant="39" id="8BV-Xe-zza"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39" id="QEy-ht-Fv4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many fingers do you think I am holding?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQh-PM-slY">
+                                <rect key="frame" x="-97" y="67" width="568" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="4FT-wh-gWG"/>
+                                    <constraint firstAttribute="width" constant="568" id="cJa-Nk-jaj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hze-Ah-WtS">
+                                <rect key="frame" x="139" y="114" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Ngx-yu-mBa"/>
+                                    <constraint firstAttribute="height" constant="30" id="zaP-aU-uZA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dE-nd-tKj">
+                                <rect key="frame" x="163" y="152" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="oOj-9e-EFL"/>
+                                </constraints>
+                                <state key="normal" title="Guess!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ztP-Wk-a1e"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYE-r3-uhU">
+                                <rect key="frame" x="-97" y="190" width="568" height="132"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hze-Ah-WtS" firstAttribute="top" secondItem="EQh-PM-slY" secondAttribute="bottom" constant="8" id="720-xa-QOJ"/>
+                            <constraint firstItem="Hze-Ah-WtS" firstAttribute="centerX" secondItem="EQh-PM-slY" secondAttribute="centerX" id="AuO-5u-BaG"/>
+                            <constraint firstAttribute="centerX" secondItem="1dE-nd-tKj" secondAttribute="centerX" id="MFt-RF-v2T"/>
+                            <constraint firstItem="1dE-nd-tKj" firstAttribute="top" secondItem="Hze-Ah-WtS" secondAttribute="bottom" constant="8" symbolic="YES" id="NAz-sN-ZzY"/>
+                            <constraint firstItem="EQh-PM-slY" firstAttribute="top" secondItem="hlc-BA-NC4" secondAttribute="bottom" constant="8" symbolic="YES" id="Oev-BG-cV1"/>
+                            <constraint firstItem="EQh-PM-slY" firstAttribute="centerX" secondItem="hlc-BA-NC4" secondAttribute="centerX" id="PGJ-xX-Poi"/>
+                            <constraint firstItem="KYE-r3-uhU" firstAttribute="top" secondItem="1dE-nd-tKj" secondAttribute="bottom" constant="8" symbolic="YES" id="Skz-hG-8Qd"/>
+                            <constraint firstAttribute="centerX" secondItem="EQh-PM-slY" secondAttribute="centerX" id="VmJ-Xp-Dqb"/>
+                            <constraint firstItem="hlc-BA-NC4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="b6j-vJ-6bE"/>
+                            <constraint firstItem="Hze-Ah-WtS" firstAttribute="top" secondItem="EQh-PM-slY" secondAttribute="bottom" constant="8" symbolic="YES" id="ba0-X2-ICK"/>
+                            <constraint firstItem="KYE-r3-uhU" firstAttribute="leading" secondItem="EQh-PM-slY" secondAttribute="leading" id="dQ1-Cu-BwA"/>
+                            <constraint firstItem="1dE-nd-tKj" firstAttribute="top" secondItem="Hze-Ah-WtS" secondAttribute="bottom" constant="8" id="f34-j3-ebe"/>
+                            <constraint firstItem="EQh-PM-slY" firstAttribute="top" secondItem="hlc-BA-NC4" secondAttribute="bottom" constant="8" id="jYJ-kM-jZC"/>
+                            <constraint firstItem="hlc-BA-NC4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mr3-BA-0ac"/>
+                            <constraint firstItem="KYE-r3-uhU" firstAttribute="trailing" secondItem="EQh-PM-slY" secondAttribute="trailing" id="oNV-1b-HK7"/>
+                            <constraint firstAttribute="centerX" secondItem="KYE-r3-uhU" secondAttribute="centerX" id="qUh-qr-6X9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KYE-r3-uhU" secondAttribute="bottom" constant="345" id="szm-Xi-0pk"/>
+                            <constraint firstAttribute="centerX" secondItem="hlc-BA-NC4" secondAttribute="centerX" id="wQi-ax-1tU"/>
+                            <constraint firstAttribute="centerX" secondItem="Hze-Ah-WtS" secondAttribute="centerX" id="xb8-O3-ZFw"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="KYE-r3-uhU" id="XKW-dJ-iEj"/>
+                        <outlet property="userInput" destination="Hze-Ah-WtS" id="3cW-L4-Yqx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416" y="246"/>
+        </scene>
+    </scenes>
+</document>

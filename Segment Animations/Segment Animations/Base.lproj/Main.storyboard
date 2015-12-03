@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Segment_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llG-uo-Vbc">
+                                <rect key="frame" x="20" y="20" width="560" height="544"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EY7-yn-Xqc">
+                                        <rect key="frame" x="250" y="236" width="60" height="72"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="0fL-FZ-etl"/>
+                                            <constraint firstAttribute="height" constant="72" id="E1U-ES-SRh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.99203509092330933" green="1" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="EY7-yn-Xqc" firstAttribute="centerY" secondItem="llG-uo-Vbc" secondAttribute="centerY" id="hBf-zp-y2D"/>
+                                    <constraint firstItem="EY7-yn-Xqc" firstAttribute="centerX" secondItem="llG-uo-Vbc" secondAttribute="centerX" id="o7x-7f-yRI"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="GZM-GP-RUY">
+                                <rect key="frame" x="0.0" y="572" width="600" height="29"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                    <segment title="10"/>
+                                </segments>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="OWW-vA-yzz"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.69101562500000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="GZM-GP-RUY" secondAttribute="trailing" constant="-20" id="32B-mX-8xI"/>
+                            <constraint firstItem="GZM-GP-RUY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="3c0-Sx-SpS"/>
+                            <constraint firstItem="llG-uo-Vbc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7Gt-Eg-cZ2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GZM-GP-RUY" secondAttribute="bottom" id="G6T-O7-iG9"/>
+                            <constraint firstItem="llG-uo-Vbc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Xvm-ld-8Xy"/>
+                            <constraint firstItem="llG-uo-Vbc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kuJ-fF-hcQ"/>
+                            <constraint firstItem="GZM-GP-RUY" firstAttribute="top" secondItem="llG-uo-Vbc" secondAttribute="bottom" constant="8" id="yI8-e3-adh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changingView" destination="llG-uo-Vbc" id="DaK-R0-WwS"/>
+                        <outlet property="numberLabel" destination="EY7-yn-Xqc" id="bmx-ae-RYS"/>
+                        <outlet property="segmentedControl" destination="GZM-GP-RUY" id="tRm-NB-Ldj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="319"/>
+        </scene>
+    </scenes>
+</document>

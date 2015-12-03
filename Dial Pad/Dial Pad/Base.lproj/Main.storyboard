@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dial_Pad" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dial-pad final mod" translatesAutoresizingMaskIntoConstraints="NO" id="G2b-mf-Yui">
+                                <rect key="frame" x="123" y="0.0" width="353" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="G2b-mf-Yui" secondAttribute="height" multiplier="353:600" id="gUy-KX-51w"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="+919820257033" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KiG-xc-Hc6">
+                                <rect key="frame" x="123" y="44" width="353" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="XqI-Qj-xYA"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGB-E4-TJ0">
+                                <rect key="frame" x="123" y="0.0" width="353" height="44"/>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.19215686274509805" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem systemItem="flexibleSpace" id="gqQ-xM-CGE"/>
+                                    <barButtonItem systemItem="reply" id="3Ba-OU-B4T"/>
+                                </items>
+                                <color key="barTintColor" red="0.18039215689999999" green="0.19215686269999999" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPh-qo-VaY">
+                                <rect key="frame" x="123" y="547" width="353" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="FmR-em-pbk"/>
+                                </constraints>
+                                <state key="normal" image="call"/>
+                                <state key="highlighted" image="call pressed"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmG-UG-Tsr">
+                                <rect key="frame" x="175" y="305" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="LIn-C6-RsB"/>
+                                    <constraint firstAttribute="width" constant="60" id="d1N-W5-mvl"/>
+                                </constraints>
+                                <state key="highlighted" image="Keypad Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wU-jH-tXf">
+                                <rect key="frame" x="270" y="305" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="56V-5v-vf1"/>
+                                    <constraint firstAttribute="width" constant="60" id="Tse-5c-W7J"/>
+                                </constraints>
+                                <state key="highlighted" image="Keypad Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dti-6R-IJY">
+                                <rect key="frame" x="365" y="305" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Mhk-if-W4p"/>
+                                    <constraint firstAttribute="height" constant="60" id="RjU-XE-2hK"/>
+                                </constraints>
+                                <state key="highlighted" image="Keypad Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWY-nd-k94">
+                                <rect key="frame" x="175" y="380" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="KVB-K5-tUG"/>
+                                    <constraint firstAttribute="width" constant="60" id="agt-f5-NwE"/>
+                                </constraints>
+                                <state key="highlighted" image="Keypad Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXz-Xp-X2O">
+                                <rect key="frame" x="270" y="380" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="iOe-2o-ray"/>
+                                    <constraint firstAttribute="height" constant="60" id="sGO-M2-9LQ"/>
+                                </constraints>
+                                <state key="highlighted" image="Keypad Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1om-6M-m7c">
+                                <rect key="frame" x="365" y="380" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="McV-aV-ZxM"/>
+                                    <constraint firstAttribute="height" constant="60" id="QHp-a6-9tJ"/>
+                                </constraints>
+                                <state key="highlighted" image="Keypad Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZ6-yi-89w">
+                                <rect key="frame" x="175" y="455" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="CQq-3h-rak"/>
+                                    <constraint firstAttribute="height" constant="60" id="Q7b-zC-jSY"/>
+                                </constraints>
+                                <state key="highlighted" image="Keypad Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mo-TG-OMk">
+                                <rect key="frame" x="270" y="455" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FoM-kV-rLq"/>
+                                    <constraint firstAttribute="width" constant="60" id="lyp-xe-dfV"/>
+                                </constraints>
+                                <state key="highlighted" image="Keypad Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urd-hb-A1P">
+                                <rect key="frame" x="365" y="455" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gUF-rp-6mn"/>
+                                    <constraint firstAttribute="width" constant="60" id="hga-yS-HmJ"/>
+                                </constraints>
+                                <state key="highlighted" image="Keypad Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3S-8Q-cK3">
+                                <rect key="frame" x="175" y="530" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Cus-gJ-Pxd"/>
+                                    <constraint firstAttribute="width" constant="60" id="vNE-Q9-3Aa"/>
+                                </constraints>
+                                <state key="highlighted" image="Keypad Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4u-Pj-eDB">
+                                <rect key="frame" x="270" y="530" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Tz2-GA-GfD"/>
+                                    <constraint firstAttribute="width" constant="60" id="W1x-Cx-34H"/>
+                                </constraints>
+                                <state key="highlighted" image="Keypad Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOg-Uw-9ti">
+                                <rect key="frame" x="365" y="530" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EAC-qf-FHs"/>
+                                    <constraint firstAttribute="width" constant="60" id="KF9-un-RBh"/>
+                                </constraints>
+                                <state key="highlighted" image="Keypad Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G2b-mf-Yui" secondAttribute="bottom" id="0kp-bn-Iem"/>
+                            <constraint firstItem="G2b-mf-Yui" firstAttribute="top" secondItem="pmG-UG-Tsr" secondAttribute="bottom" constant="-365" id="23S-nf-H7E"/>
+                            <constraint firstItem="G2b-mf-Yui" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="4bI-8B-DRI"/>
+                            <constraint firstItem="dGB-E4-TJ0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="AYC-x2-aCN"/>
+                            <constraint firstItem="G2b-mf-Yui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Akv-Qq-Bdk"/>
+                            <constraint firstItem="6wU-jH-tXf" firstAttribute="centerY" secondItem="pmG-UG-Tsr" secondAttribute="centerY" id="B7Q-dF-dzy"/>
+                            <constraint firstItem="6Mo-TG-OMk" firstAttribute="leading" secondItem="OZ6-yi-89w" secondAttribute="trailing" constant="35" id="DQ9-La-AmP"/>
+                            <constraint firstItem="e4u-Pj-eDB" firstAttribute="centerY" secondItem="L3S-8Q-cK3" secondAttribute="centerY" id="Fvd-ao-PLN"/>
+                            <constraint firstItem="uOg-Uw-9ti" firstAttribute="leading" secondItem="e4u-Pj-eDB" secondAttribute="trailing" constant="35" id="I2X-H6-qYt"/>
+                            <constraint firstItem="Dti-6R-IJY" firstAttribute="centerY" secondItem="pmG-UG-Tsr" secondAttribute="centerY" id="IkT-Dq-oDi"/>
+                            <constraint firstItem="Dti-6R-IJY" firstAttribute="leading" secondItem="6wU-jH-tXf" secondAttribute="trailing" constant="35" id="JSB-py-q13"/>
+                            <constraint firstItem="e4u-Pj-eDB" firstAttribute="leading" secondItem="L3S-8Q-cK3" secondAttribute="trailing" constant="35" id="MOx-FX-8Lo"/>
+                            <constraint firstItem="vXz-Xp-X2O" firstAttribute="centerY" secondItem="yWY-nd-k94" secondAttribute="centerY" id="QpD-lf-bxy"/>
+                            <constraint firstItem="L3S-8Q-cK3" firstAttribute="top" secondItem="OZ6-yi-89w" secondAttribute="bottom" constant="15" id="Rjo-3t-xBm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QPh-qo-VaY" secondAttribute="bottom" id="VZw-1c-Ayk"/>
+                            <constraint firstItem="KiG-xc-Hc6" firstAttribute="trailing" secondItem="G2b-mf-Yui" secondAttribute="trailing" id="WGb-De-1Lq"/>
+                            <constraint firstItem="Urd-hb-A1P" firstAttribute="leading" secondItem="6Mo-TG-OMk" secondAttribute="trailing" constant="35" id="YFS-BX-B5z"/>
+                            <constraint firstItem="dGB-E4-TJ0" firstAttribute="width" secondItem="G2b-mf-Yui" secondAttribute="width" id="boQ-i7-JaY"/>
+                            <constraint firstItem="6Mo-TG-OMk" firstAttribute="centerY" secondItem="OZ6-yi-89w" secondAttribute="centerY" id="cqH-k6-ouz"/>
+                            <constraint firstItem="QPh-qo-VaY" firstAttribute="trailing" secondItem="G2b-mf-Yui" secondAttribute="trailing" id="dwb-fz-oh9"/>
+                            <constraint firstItem="6Mo-TG-OMk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eGc-mW-qBa"/>
+                            <constraint firstItem="G2b-mf-Yui" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="euk-HA-seK"/>
+                            <constraint firstItem="QPh-qo-VaY" firstAttribute="leading" secondItem="G2b-mf-Yui" secondAttribute="leading" id="f6g-On-deD"/>
+                            <constraint firstItem="uOg-Uw-9ti" firstAttribute="centerY" secondItem="L3S-8Q-cK3" secondAttribute="centerY" id="hEz-IO-chL"/>
+                            <constraint firstItem="1om-6M-m7c" firstAttribute="centerY" secondItem="yWY-nd-k94" secondAttribute="centerY" id="lRl-1V-NTR"/>
+                            <constraint firstItem="KiG-xc-Hc6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nH6-wI-Mpe"/>
+                            <constraint firstItem="QPh-qo-VaY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oIq-d4-Io2"/>
+                            <constraint firstItem="OZ6-yi-89w" firstAttribute="top" secondItem="yWY-nd-k94" secondAttribute="bottom" constant="15" id="pYb-fy-zKc"/>
+                            <constraint firstItem="1om-6M-m7c" firstAttribute="leading" secondItem="vXz-Xp-X2O" secondAttribute="trailing" constant="35" id="qF7-Pb-Nux"/>
+                            <constraint firstItem="6wU-jH-tXf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qh4-pV-obv"/>
+                            <constraint firstItem="dGB-E4-TJ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sPQ-zg-X9f"/>
+                            <constraint firstItem="yWY-nd-k94" firstAttribute="top" secondItem="pmG-UG-Tsr" secondAttribute="bottom" constant="15" id="sw4-or-6Yr"/>
+                            <constraint firstItem="vXz-Xp-X2O" firstAttribute="leading" secondItem="yWY-nd-k94" secondAttribute="trailing" constant="35" id="uh2-xl-z5V"/>
+                            <constraint firstItem="KiG-xc-Hc6" firstAttribute="leading" secondItem="G2b-mf-Yui" secondAttribute="leading" id="umB-go-YVf"/>
+                            <constraint firstItem="KiG-xc-Hc6" firstAttribute="top" secondItem="dGB-E4-TJ0" secondAttribute="bottom" id="uno-dp-tgH"/>
+                            <constraint firstItem="e4u-Pj-eDB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wbm-Qt-scW"/>
+                            <constraint firstItem="Urd-hb-A1P" firstAttribute="centerY" secondItem="OZ6-yi-89w" secondAttribute="centerY" id="xbv-LH-HLB"/>
+                            <constraint firstItem="6wU-jH-tXf" firstAttribute="leading" secondItem="pmG-UG-Tsr" secondAttribute="trailing" constant="35" id="y9O-1u-UR9"/>
+                            <constraint firstItem="vXz-Xp-X2O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zae-vz-Vph"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="319"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Keypad Button" width="106" height="106"/>
+        <image name="call" width="600" height="80"/>
+        <image name="call pressed" width="600" height="81"/>
+        <image name="dial-pad final mod" width="600" height="1024"/>
+    </resources>
+</document>

@@ -1,0 +1,3 @@
+platform :ios, "8.0"
+pod "MaterialKit", :git => "https://github.com/reesemclean/MaterialKit", :branch => "swift_2"
+use_frameworks!

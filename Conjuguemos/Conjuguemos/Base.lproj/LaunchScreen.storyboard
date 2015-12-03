@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C48a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgF-Ba-MTx">
+                                <rect key="frame" x="352" y="246" width="53.5" height="107.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <color key="textColor" red="0.77647058823529413" green="0.76078431372549016" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXd-el-aP3">
+                                <rect key="frame" x="300" y="300" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yw9-F2-72E">
+                                <rect key="frame" x="209" y="183" width="144.5" height="233"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="200"/>
+                                <color key="textColor" red="0.77647058823529413" green="0.76078431372549016" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © Siddhant N. Pagariya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkU-69-6sX">
+                                <rect key="frame" x="219" y="568" width="163" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits to Conjuguemos, MaterialKit Developers, and icons8.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSB-vK-Jzl">
+                                <rect key="frame" x="143" y="580" width="313.5" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Conjuguemos" translatesAutoresizingMaskIntoConstraints="NO" id="GLd-2u-Vpb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.61960784310000006" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="GLd-2u-Vpb" secondAttribute="bottom" id="0sd-NK-jBE"/>
+                            <constraint firstItem="fkU-69-6sX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8KN-A1-PtN"/>
+                            <constraint firstItem="GLd-2u-Vpb" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="ChN-LP-YzU"/>
+                            <constraint firstItem="xXd-el-aP3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="T0b-pa-02g"/>
+                            <constraint firstItem="eSB-vK-Jzl" firstAttribute="top" secondItem="fkU-69-6sX" secondAttribute="bottom" id="TLE-TF-is1"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="eSB-vK-Jzl" secondAttribute="bottom" constant="8" id="Uzr-Rz-jO4"/>
+                            <constraint firstItem="TgF-Ba-MTx" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="anS-lT-sSq"/>
+                            <constraint firstItem="eSB-vK-Jzl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bhd-P0-Z4W"/>
+                            <constraint firstItem="TgF-Ba-MTx" firstAttribute="leading" secondItem="yw9-F2-72E" secondAttribute="trailing" constant="-2" id="cCn-Ao-b2Z"/>
+                            <constraint firstItem="xXd-el-aP3" firstAttribute="leading" secondItem="yw9-F2-72E" secondAttribute="trailing" constant="-54" id="dsA-Sd-TqY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GLd-2u-Vpb" secondAttribute="trailing" constant="-20" id="ljf-M8-LPk"/>
+                            <constraint firstItem="yw9-F2-72E" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="qJi-D7-KYr"/>
+                            <constraint firstItem="xXd-el-aP3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uuq-Fr-aUD"/>
+                            <constraint firstItem="GLd-2u-Vpb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="x21-77-TR6"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="303"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Conjuguemos" width="1024" height="1024"/>
+    </resources>
+</document>

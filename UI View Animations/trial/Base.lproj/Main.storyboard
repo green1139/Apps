@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UI_View_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="CSAnimationView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIo-qz-dKQ" customClass="CSAnimationView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKg-Q2-gNg" customClass="CSAnimationView">
+                                        <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLi-J2-bhb" customClass="CSAnimationView">
+                                                <rect key="frame" x="25" y="25" width="150" height="150"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEW-Yj-V9r">
+                                                        <rect key="frame" x="51" y="51" width="48" height="48"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkk-wQ-URb">
+                                                        <rect key="frame" x="-25" y="-25" width="200" height="200"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="200" id="HzC-XW-PgH"/>
+                                                            <constraint firstAttribute="height" constant="200" id="Sye-Nu-o6O"/>
+                                                        </constraints>
+                                                        <state key="normal">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NtX-5X-7Ml"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="zkk-wQ-URb" firstAttribute="centerX" secondItem="jLi-J2-bhb" secondAttribute="centerX" id="4zE-lJ-EeG"/>
+                                                    <constraint firstItem="JEW-Yj-V9r" firstAttribute="centerX" secondItem="jLi-J2-bhb" secondAttribute="centerX" id="I9S-au-jJQ"/>
+                                                    <constraint firstItem="JEW-Yj-V9r" firstAttribute="centerY" secondItem="jLi-J2-bhb" secondAttribute="centerY" id="LXP-Ap-tcA"/>
+                                                    <constraint firstAttribute="width" constant="150" id="ZoK-u8-uMj"/>
+                                                    <constraint firstAttribute="height" constant="150" id="lrM-pU-Ery"/>
+                                                    <constraint firstItem="zkk-wQ-URb" firstAttribute="centerY" secondItem="jLi-J2-bhb" secondAttribute="centerY" id="n0K-wi-L5f"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="popAlpha"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                        <real key="value" value="1.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="jLi-J2-bhb" firstAttribute="centerX" secondItem="qKg-Q2-gNg" secondAttribute="centerX" id="OMZ-pf-c98"/>
+                                            <constraint firstAttribute="height" constant="200" id="Z53-cX-vGv"/>
+                                            <constraint firstAttribute="width" constant="200" id="wm9-qR-TSa"/>
+                                            <constraint firstItem="jLi-J2-bhb" firstAttribute="centerY" secondItem="qKg-Q2-gNg" secondAttribute="centerY" id="xk3-tD-kQJ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="99"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="bounceRight"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressImage="progress" trackImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="WSL-Hg-qGY">
+                                        <rect key="frame" x="225" y="430" width="150" height="2"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Wzg-Ok-OAO"/>
+                                        </constraints>
+                                    </progressView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="qKg-Q2-gNg" firstAttribute="centerY" secondItem="nIo-qz-dKQ" secondAttribute="centerY" id="DOz-hb-WRn"/>
+                                    <constraint firstItem="WSL-Hg-qGY" firstAttribute="centerX" secondItem="nIo-qz-dKQ" secondAttribute="centerX" id="XQS-mI-xDu"/>
+                                    <constraint firstItem="qKg-Q2-gNg" firstAttribute="centerX" secondItem="nIo-qz-dKQ" secondAttribute="centerX" id="d05-HE-OYW"/>
+                                    <constraint firstItem="WSL-Hg-qGY" firstAttribute="top" secondItem="qKg-Q2-gNg" secondAttribute="bottom" constant="30" id="ydT-Gj-Sqt"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="zoomOut"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nIo-qz-dKQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7O6-NS-uDI"/>
+                            <constraint firstItem="nIo-qz-dKQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HIN-fe-j79"/>
+                            <constraint firstItem="nIo-qz-dKQ" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="YBh-om-s8Z"/>
+                            <constraint firstItem="nIo-qz-dKQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ful-e7-9XV"/>
+                            <constraint firstItem="nIo-qz-dKQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ikh-T8-6zF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nIo-qz-dKQ" secondAttribute="trailing" id="sHJ-ZI-huv"/>
+                            <constraint firstAttribute="trailing" secondItem="nIo-qz-dKQ" secondAttribute="trailing" id="wPV-G7-GqJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ful-e7-9XV"/>
+                                <exclude reference="ikh-T8-6zF"/>
+                                <exclude reference="sHJ-ZI-huv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="progress" destination="WSL-Hg-qGY" id="MA5-02-yIW"/>
+                        <outlet property="text" destination="JEW-Yj-V9r" id="1Ez-wk-t9J"/>
+                        <outlet property="textDisplay" destination="jLi-J2-bhb" id="RjK-Km-4ex"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="254"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="560" height="8"/>
+        <image name="progress" width="289" height="8"/>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Loader_Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.01" minValue="9.9999999999999995e-07" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="I2u-fe-SfQ">
+                                <rect key="frame" x="18" y="550" width="564" height="31"/>
+                                <color key="tintColor" red="0.14479340409999999" green="0.70494002529999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="speedChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="k1y-XC-aQ3"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loader-1" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-Hz-auV">
+                                <rect key="frame" x="284" y="284" width="32" height="32"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KdB-Hz-auV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3bz-cd-Bnr"/>
+                            <constraint firstItem="KdB-Hz-auV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="GeO-zO-VFX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I2u-fe-SfQ" secondAttribute="bottom" constant="20" id="MM7-33-X6N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KdB-Hz-auV" secondAttribute="trailing" constant="-20" id="Tsw-aJ-kGk"/>
+                            <constraint firstItem="I2u-fe-SfQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YR6-X2-ilU"/>
+                            <constraint firstItem="I2u-fe-SfQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gyr-yK-idY"/>
+                            <constraint firstItem="KdB-Hz-auV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lB8-CA-ssg"/>
+                            <constraint firstItem="I2u-fe-SfQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oXT-W0-3a5"/>
+                            <constraint firstItem="KdB-Hz-auV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="rIl-7N-d47"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KdB-Hz-auV" secondAttribute="bottom" id="x5S-mp-bck"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GeO-zO-VFX"/>
+                                <exclude reference="Tsw-aJ-kGk"/>
+                                <exclude reference="rIl-7N-d47"/>
+                                <exclude reference="x5S-mp-bck"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="loaderImage" destination="KdB-Hz-auV" id="FS2-am-C4c"/>
+                        <outlet property="slider" destination="I2u-fe-SfQ" id="NBC-9i-eRN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="319"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="loader-1" width="32" height="32"/>
+    </resources>
+</document>

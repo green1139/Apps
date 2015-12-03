@@ -1,0 +1,20 @@
+PODS:
+  - MaterialKit (0.3.5)
+
+DEPENDENCIES:
+  - MaterialKit (from `https://github.com/reesemclean/MaterialKit`, branch `swift_2`)
+
+EXTERNAL SOURCES:
+  MaterialKit:
+    :branch: swift_2
+    :git: https://github.com/reesemclean/MaterialKit
+
+CHECKOUT OPTIONS:
+  MaterialKit:
+    :commit: 0c1daf9e16894ad46772757148a2a01a4101d4cd
+    :git: https://github.com/reesemclean/MaterialKit
+
+SPEC CHECKSUMS:
+  MaterialKit: 6f1e9382f89593df768bc0c31ded9952a6d8ad46
+
+COCOAPODS: 0.39.0

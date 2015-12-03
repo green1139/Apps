@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cat_Years" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYL-zP-gmK">
+                                <rect key="frame" x="116" y="45" width="142" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="AeY-h2-N83"/>
+                                    <constraint firstAttribute="height" constant="21" id="hZX-Mj-gZG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter your cat's age, in years:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cU0-u7-3Nt">
+                                <rect key="frame" x="73" y="78" width="228" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sGn-0a-SZZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhG-yn-s1Y">
+                                <rect key="frame" x="157" y="153" width="61" height="30"/>
+                                <state key="normal" title="Find out!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r5B-9o-RVn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JB-pF-75c">
+                                <rect key="frame" x="16" y="191" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aCA-6x-MN4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wzc-sY-AK0">
+                                <rect key="frame" x="146" y="106" width="82" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="aFV-u6-FcV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2JB-pF-75c" firstAttribute="top" secondItem="yhG-yn-s1Y" secondAttribute="bottom" constant="8" symbolic="YES" id="EoJ-5h-PRp"/>
+                            <constraint firstItem="Wzc-sY-AK0" firstAttribute="centerX" secondItem="cU0-u7-3Nt" secondAttribute="centerX" id="J0C-Ve-6PK"/>
+                            <constraint firstItem="Wzc-sY-AK0" firstAttribute="top" secondItem="cU0-u7-3Nt" secondAttribute="bottom" constant="7" id="Qhe-SM-LtV"/>
+                            <constraint firstItem="hYL-zP-gmK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="WcY-xt-Lgu"/>
+                            <constraint firstItem="2JB-pF-75c" firstAttribute="centerX" secondItem="yhG-yn-s1Y" secondAttribute="centerX" id="Znq-EU-VYA"/>
+                            <constraint firstItem="yhG-yn-s1Y" firstAttribute="top" secondItem="Wzc-sY-AK0" secondAttribute="bottom" constant="17" id="hBg-oD-jTm"/>
+                            <constraint firstItem="2JB-pF-75c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kxm-E7-NCM"/>
+                            <constraint firstItem="cU0-u7-3Nt" firstAttribute="centerX" secondItem="hYL-zP-gmK" secondAttribute="centerX" id="lq0-VH-sh1"/>
+                            <constraint firstItem="cU0-u7-3Nt" firstAttribute="top" secondItem="hYL-zP-gmK" secondAttribute="bottom" constant="12" id="or9-Dm-RvA"/>
+                            <constraint firstItem="2JB-pF-75c" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tfQ-a3-HPP"/>
+                            <constraint firstItem="Wzc-sY-AK0" firstAttribute="centerX" secondItem="yhG-yn-s1Y" secondAttribute="centerX" id="xaH-Ju-BEq"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="Age" destination="Wzc-sY-AK0" id="8B8-5X-dXr"/>
+                        <outlet property="Result" destination="2JB-pF-75c" id="LNz-ip-DGy"/>
+                        <outlet property="result" destination="2JB-pF-75c" id="d8T-LU-2Ba"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281.5" y="200.5"/>
+        </scene>
+    </scenes>
+</document>

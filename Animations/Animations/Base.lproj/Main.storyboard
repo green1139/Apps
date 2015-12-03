@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfj-YO-n20">
+                                <rect key="frame" x="102" y="625" width="170" height="34"/>
+                                <state key="normal" title="Start/Stop Animation">
+                                    <color key="titleColor" red="1" green="0.010051519906342232" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.89954377691493992" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="0.0" green="0.58847403060000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.89954377689999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.0" green="0.58847403060869929" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.89954377689999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cuq-7D-oLa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ksR-ej-Wwc">
+                                <rect key="frame" x="16" y="0.0" width="343" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ksR-ej-Wwc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="1fm-qs-1gl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ksR-ej-Wwc" secondAttribute="bottom" id="NKI-Qi-NNk"/>
+                            <constraint firstItem="ksR-ej-Wwc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V1U-Cg-wia"/>
+                            <constraint firstItem="Bfj-YO-n20" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YoE-k0-LLt"/>
+                            <constraint firstItem="ksR-ej-Wwc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="alj-zY-uIK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bfj-YO-n20" secondAttribute="bottom" constant="8" id="dl9-aF-jnF"/>
+                            <constraint firstItem="ksR-ej-Wwc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nrd-KS-UMB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ksR-ej-Wwc" secondAttribute="trailing" id="vus-GB-3M2"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="ksR-ej-Wwc" id="BK7-NH-TcA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242.5" y="164.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="frame1.png" width="200" height="200"/>
+    </resources>
+</document>
