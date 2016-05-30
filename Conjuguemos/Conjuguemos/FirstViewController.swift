@@ -92,6 +92,10 @@ class FirstViewController: UIViewController, UIWebViewDelegate, SFSafariViewCont
         }
     }
     func webViewDidFinishLoad(webView: UIWebView) {
+        if (webView.loading)
+        {
+            return;
+        }
         ///Error = false
         ///AlertMessage = "Page Loaded."
         ///performSegueWithIdentifier("vocabAlert", sender: self)

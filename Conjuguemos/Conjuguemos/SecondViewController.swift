@@ -92,6 +92,10 @@ class SecondViewController: UIViewController, UIWebViewDelegate {
         }
     }
     func webViewDidFinishLoad(webView: UIWebView) {
+        if (webView.loading)
+        {
+            return;
+        }
         ///Error = false
         ///AlertMessage = "Page Loaded."
         ///performSegueWithIdentifier("conjugationsAlert", sender: self)

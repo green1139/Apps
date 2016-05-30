@@ -20,6 +20,7 @@
 		35C0F6531BBC58AC00EA5EF6 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C0F6521BBC58AC00EA5EF6 /* ScoreViewController.swift */; };
 		35C5203A1BDAC05600512A78 /* CustomRoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C520391BDAC05600512A78 /* CustomRoundedImageView.swift */; };
 		35CAC3051C0938ED00384101 /* verbList.js in Resources */ = {isa = PBXBuildFile; fileRef = 35CAC3041C0938ED00384101 /* verbList.js */; };
+		35DF2A981CF61B67001205C2 /* ConjuguemosTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 35DF2A971CF61B67001205C2 /* ConjuguemosTransparent.png */; };
 		35E70D751C06A7F500FD5D9C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E70D741C06A7F500FD5D9C /* SettingsViewController.swift */; };
 		35E843A21BBAE0790019DB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E843A11BBAE0790019DB58 /* AppDelegate.swift */; };
 		35E843A41BBAE0790019DB58 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E843A31BBAE0790019DB58 /* FirstViewController.swift */; };
@@ -59,6 +60,7 @@
 		35C0F6521BBC58AC00EA5EF6 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		35C520391BDAC05600512A78 /* CustomRoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRoundedImageView.swift; sourceTree = "<group>"; };
 		35CAC3041C0938ED00384101 /* verbList.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = verbList.js; sourceTree = "<group>"; };
+		35DF2A971CF61B67001205C2 /* ConjuguemosTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ConjuguemosTransparent.png; sourceTree = SOURCE_ROOT; };
 		35E70D741C06A7F500FD5D9C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		35E8439E1BBAE0790019DB58 /* Conjuguemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conjuguemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E843A11BBAE0790019DB58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				35E843A71BBAE0790019DB58 /* Main.storyboard */,
 				35E843AC1BBAE0790019DB58 /* LaunchScreen.storyboard */,
 				35C520391BDAC05600512A78 /* CustomRoundedImageView.swift */,
+				35DF2A971CF61B67001205C2 /* ConjuguemosTransparent.png */,
 				359B09281C0BE78A008F98B3 /* Conjuguemos.png */,
 				35E843AF1BBAE0790019DB58 /* Info.plist */,
 				359B54A91BC42F2A00F94980 /* Images.xcassets */,
@@ -250,6 +253,7 @@
 			files = (
 				35F695491BFF790100DDB50C /* conjugationsItalian.html in Resources */,
 				35F695571BFF7F1F00DDB50C /* UIWebViewSearch.js in Resources */,
+				35DF2A981CF61B67001205C2 /* ConjuguemosTransparent.png in Resources */,
 				35E843AE1BBAE0790019DB58 /* LaunchScreen.storyboard in Resources */,
 				359B54AA1BC42F2A00F94980 /* Images.xcassets in Resources */,
 				35F6954D1BFF790100DDB50C /* grammarFrench.html in Resources */,

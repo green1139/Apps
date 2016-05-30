@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C48a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -48,27 +48,44 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Conjuguemos" translatesAutoresizingMaskIntoConstraints="NO" id="GLd-2u-Vpb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ConjuguemosTransparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="GLd-2u-Vpb">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.62745098039215685" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99215686270000003" green="0.61960784310000006" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.61960784313725492" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="GLd-2u-Vpb" secondAttribute="bottom" id="0sd-NK-jBE"/>
+                            <constraint firstItem="GLd-2u-Vpb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="3ax-Sg-3ID"/>
                             <constraint firstItem="fkU-69-6sX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8KN-A1-PtN"/>
                             <constraint firstItem="GLd-2u-Vpb" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="ChN-LP-YzU"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="GLd-2u-Vpb" secondAttribute="bottom" id="Rss-tj-CY9"/>
                             <constraint firstItem="xXd-el-aP3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="T0b-pa-02g"/>
                             <constraint firstItem="eSB-vK-Jzl" firstAttribute="top" secondItem="fkU-69-6sX" secondAttribute="bottom" id="TLE-TF-is1"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="eSB-vK-Jzl" secondAttribute="bottom" constant="8" id="Uzr-Rz-jO4"/>
+                            <constraint firstItem="GLd-2u-Vpb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="XIA-Ru-y4K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GLd-2u-Vpb" secondAttribute="trailing" constant="-20" id="XNi-cw-uic"/>
                             <constraint firstItem="TgF-Ba-MTx" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="anS-lT-sSq"/>
                             <constraint firstItem="eSB-vK-Jzl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bhd-P0-Z4W"/>
                             <constraint firstItem="TgF-Ba-MTx" firstAttribute="leading" secondItem="yw9-F2-72E" secondAttribute="trailing" constant="-2" id="cCn-Ao-b2Z"/>
                             <constraint firstItem="xXd-el-aP3" firstAttribute="leading" secondItem="yw9-F2-72E" secondAttribute="trailing" constant="-54" id="dsA-Sd-TqY"/>
+                            <constraint firstItem="GLd-2u-Vpb" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="fAR-aQ-Vf4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GLd-2u-Vpb" secondAttribute="trailing" constant="-20" id="ljf-M8-LPk"/>
                             <constraint firstItem="yw9-F2-72E" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="qJi-D7-KYr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GLd-2u-Vpb" secondAttribute="trailing" constant="-20" id="u26-aF-ARh"/>
                             <constraint firstItem="xXd-el-aP3" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uuq-Fr-aUD"/>
                             <constraint firstItem="GLd-2u-Vpb" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="x21-77-TR6"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ChN-LP-YzU"/>
+                                <exclude reference="XIA-Ru-y4K"/>
+                                <exclude reference="ljf-M8-LPk"/>
+                                <exclude reference="u26-aF-ARh"/>
+                                <exclude reference="x21-77-TR6"/>
+                                <exclude reference="0sd-NK-jBE"/>
+                            </mask>
+                        </variation>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
@@ -78,6 +95,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Conjuguemos" width="1024" height="1024"/>
+        <image name="ConjuguemosTransparent.png" width="1024" height="1024"/>
     </resources>
 </document>

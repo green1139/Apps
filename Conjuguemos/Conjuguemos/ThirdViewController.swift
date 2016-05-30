@@ -92,6 +92,10 @@ class ThirdViewController: UIViewController, UIWebViewDelegate {
         }
     }
     func webViewDidFinishLoad(webView: UIWebView) {
+        if (webView.loading)
+        {
+            return;
+        }
         ///Error = false
         ///AlertMessage = "Page Loaded."
         ///performSegueWithIdentifier("grammarAlert", sender: self)
@@ -105,7 +109,7 @@ class ThirdViewController: UIViewController, UIWebViewDelegate {
         let data = webView.stringByEvaluatingJavaScriptFromString("clock")
         var title:String! = webView.stringByEvaluatingJavaScriptFromString("document.title")
         title = ((title!.componentsSeparatedByString(" | "))[0])
-        if let data = data {
+        if let _ = data {
             if (true)///data == "0")
             {
                 ///let data2 = webView.stringByEvaluatingJavaScriptFromString("correct")
